@@ -1,0 +1,12 @@
+// Mixins
+@mixin font-style(
+  $size: 1rem,
+  $fontWeight: 400,
+  $lineHeight: unset,
+  $letterSpacing: unset
+) {
+  font-size: $size;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}

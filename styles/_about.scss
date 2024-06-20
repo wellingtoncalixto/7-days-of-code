@@ -1,0 +1,46 @@
+.about-us-section {
+  height: calc(100vh - 8rem);
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "infos";
+  grid-template-rows: 60% 40%;
+}
+
+.about-us-header {
+  grid-area: header;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+
+  padding: 9.6rem 0;
+
+  & > span {
+    @include font-style($size: 1.6rem, $fontWeight: 600, $lineHeight: 2.4rem);
+    color: var(--primary-color);
+  }
+
+  & > h2 {
+    @include font-style(
+      $size: 4.8rem,
+      $fontWeight: 600,
+      $lineHeight: 6rem,
+      $letterSpacing: -0.02rem
+    );
+    color: var(--tertiary-color);
+  }
+
+  & > p {
+    @include font-style($size: 2rem, $lineHeight: 3rem);
+    color: var(--secundary-color);
+    text-align: center;
+  }
+}
+
+.about-us-infos-container {
+  grid-area: infos;
+}

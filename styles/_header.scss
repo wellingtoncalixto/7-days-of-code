@@ -1,34 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  font-size: 62.5%;
-  --primary-color: #8e2424;
-  --primary-color-hover: #9e2f2f;
-  --secundary-color: #667085;
-  --tertiary-color: #101828;
-}
-
-.font-md-medium {
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 2.4rem;
-  text-align: left;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  width: 100%;
-  max-width: 130rem;
-  margin: 0 auto;
-}
-
 header {
   width: 100%;
-  padding: 1.8rem;
+  padding: 1.8rem 0;
 }
 
 header nav {
