@@ -4,7 +4,7 @@
   display: grid;
   grid-template-areas:
     "header"
-    "infos";
+    "metrics";
   grid-template-rows: 60% 40%;
 }
 
@@ -41,6 +41,35 @@
   }
 }
 
-.about-us-infos-container {
-  grid-area: infos;
+.about-us-metrics-container {
+  grid-area: metrics;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+}
+
+.metric {
+  & > span {
+    @include font-style(
+      $size: 6rem,
+      $fontWeight: 600,
+      $lineHeight: 7.2rem,
+      $letterSpacing: -0.02rem
+    );
+
+    color: var(--primary-color);
+  }
+
+  & > h6 {
+    @include font-style($size: 1.8rem, $fontWeight: 500, $lineHeight: 2.8rem);
+    color: var(--tertiary-color);
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  & > p {
+    @include font-style($lineHeight: 2.4rem);
+    color: var(--secundary-color);
+  }
 }
