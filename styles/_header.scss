@@ -25,7 +25,7 @@ header nav img {
 
 .nav-item {
   & > a {
-    @include font-style($size: 1.6rem, $fontWeight: 500, $lineHeight: 2.4rem);
+    @include font-style($fontWeight: 500, $lineHeight: 2.4rem);
     text-decoration: none;
     color: var(--secundary-color);
 
@@ -49,7 +49,7 @@ header nav img {
 
 .sign-in-button,
 .sign-up-button {
-  @include font-style($size: 1.6rem, $fontWeight: 500, $lineHeight: 2.4rem);
+  @include font-style($fontWeight: 500, $lineHeight: 2.4rem);
   padding: 1rem 1.8rem;
   text-decoration: none;
 }

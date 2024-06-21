@@ -20,7 +20,7 @@
   padding: 9.6rem 0;
 
   & > span {
-    @include font-style($size: 1.6rem, $fontWeight: 600, $lineHeight: 2.4rem);
+    @include font-style($fontWeight: 600, $lineHeight: 2.4rem);
     color: var(--primary-color);
   }
 
