@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
 // Global Variebles
 :root {
   font-size: 62.5%;
@@ -27,6 +33,21 @@ body {
   @include font-style($size: 2rem, $lineHeight: 3rem);
   color: var(--secundary-color);
   text-align: center;
+}
+
+.xl-medium-text {
+  @include font-style($size: 2rem, $fontWeight: 500, $lineHeight: 3rem);
+  color: var(--tertiary-color);
+}
+
+.lg-medium-text {
+  @include font-style($size: 1.8rem, $fontWeight: 500, $lineHeight: 2.8rem);
+  color: var(--tertiary-color);
+}
+
+.md-medium-text {
+  @include font-style($fontWeight: 500, $lineHeight: 2.4rem);
+  color: var(--secundary-color);
 }
 
 .md-semibold-text {
