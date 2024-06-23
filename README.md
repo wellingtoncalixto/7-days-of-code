@@ -10,7 +10,7 @@ Project developed during participation in the [#7DaysOfCode](https://7daysofcode
 
 ## Tech Stack
 
-This project only features the front-end part, with no interaction with a back-end and no need for JavaScript. Therefore, the landing page was entirely developed using **HTML5** and **CSS**.
+This project only features the front-end part, with no interaction with a back-end and no need for JavaScript. Therefore, the landing page was entirely developed using **HTML5** and **SCSS**.
 
 ## Pt-BR
 
@@ -18,4 +18,4 @@ Projeto desenvolvido durante a participação no desafio [#7DaysOfCode](https://
 
 ## Tech Stack
 
-Este projeto apresenta apenas a parte front-end, sem interação com um back-end e sem a necessidade de JavaScript. Por isso, a landing page foi desenvolvida inteiramente utilizando **HTML5** e **CSS**.
+Este projeto apresenta apenas a parte front-end, sem interação com um back-end e sem a necessidade de JavaScript. Por isso, a landing page foi desenvolvida inteiramente utilizando **HTML5** e **SCSS**.
