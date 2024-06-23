@@ -1,0 +1,30 @@
+.oportunits-section {
+  margin-top: 10rem;
+}
+
+.oportunits-header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  & > span {
+    @include font-style($size: 1.4rem, $fontWeight: 500, $lineHeight: 2rem);
+    color: var(--primary-color);
+    background-color: rgba(142, 36, 36, 0.05);
+
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.6rem;
+  }
+
+  & > h2 {
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  & > img {
+    width: 100%;
+    object-fit: cover;
+    margin: 6.4rem 0;
+  }
+}

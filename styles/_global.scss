@@ -22,6 +22,23 @@ body {
   padding: 0 3.2rem;
 }
 
+//Global Class
+.xl-normal-text {
+  @include font-style($size: 2rem, $lineHeight: 3rem);
+  color: var(--secundary-color);
+  text-align: center;
+}
+
+.md-semibold-text {
+  @include font-style(
+    $size: 3.6rem,
+    $fontWeight: 600,
+    $lineHeight: 4.4rem,
+    $letterSpacing: 0.02%
+  );
+  text-align: center;
+}
+
 // Media
 @media screen and (min-width: 1281px) {
   body {

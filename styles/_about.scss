@@ -29,15 +29,9 @@
       $size: 4.8rem,
       $fontWeight: 600,
       $lineHeight: 6rem,
-      $letterSpacing: -0.02rem
+      $letterSpacing: -0.02%
     );
     color: var(--tertiary-color);
-  }
-
-  & > p {
-    @include font-style($size: 2rem, $lineHeight: 3rem);
-    color: var(--secundary-color);
-    text-align: center;
   }
 }
 
@@ -55,7 +49,7 @@
       $size: 6rem,
       $fontWeight: 600,
       $lineHeight: 7.2rem,
-      $letterSpacing: -0.02rem
+      $letterSpacing: -0.02%
     );
 
     color: var(--primary-color);
