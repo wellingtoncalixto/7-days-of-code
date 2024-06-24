@@ -1,11 +1,16 @@
 .about-us-section {
-  height: calc(100vh - 8rem);
+  height: max-content;
 
   display: grid;
   grid-template-areas:
     "header"
     "metrics";
-  grid-template-rows: 60% 40%;
+
+  @media screen and (min-width: 768px) {
+    height: calc(100vh - 8rem);
+
+    grid-template-rows: 60% 40%;
+  }
 }
 
 .about-us-header {
@@ -26,6 +31,7 @@
 
   & > h2 {
     color: var(--tertiary-color);
+    text-align: center;
   }
 
   & > p {
@@ -38,8 +44,12 @@
   grid-area: metrics;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3.2rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .metric {

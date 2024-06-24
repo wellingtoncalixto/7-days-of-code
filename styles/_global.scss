@@ -13,7 +13,6 @@ li {
 
 // Global Variebles
 :root {
-  font-size: 62.5%;
   --primary-color: #8e2424;
   --primary-color-hover: #9e2f2f;
   --secundary-color: #667085;
@@ -35,7 +34,7 @@ body {
     $size: 4.8rem,
     $fontWeight: 600,
     $lineHeight: 6rem,
-    $letterSpacing: -0.02%
+    $letterSpacing: -0.02rem
   );
 }
 
@@ -44,7 +43,7 @@ body {
     $size: 3.6rem,
     $fontWeight: 500,
     $lineHeight: 4.4rem,
-    $letterSpacing: -0.02%
+    $letterSpacing: -0.02rem
   );
 }
 
@@ -53,7 +52,7 @@ body {
     $size: 3.6rem,
     $fontWeight: 600,
     $lineHeight: 4.4rem,
-    $letterSpacing: 0.02%
+    $letterSpacing: -0.02rem
   );
 }
 
@@ -83,6 +82,18 @@ body {
 }
 
 // Media
+@media screen and (max-width: 767px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
 @media screen and (min-width: 1281px) {
   body {
     padding: 0;
