@@ -45,9 +45,25 @@ body {
   color: var(--tertiary-color);
 }
 
+.sm-semibold-text {
+  @include font-style($size: 1.4rem, $fontWeight: 600, $lineHeight: 2rem);
+}
+
+.sm-normal-text {
+  @include font-style($size: 1.4rem, $lineHeight: 2rem);
+}
+
 .md-medium-text {
   @include font-style($fontWeight: 500, $lineHeight: 2.4rem);
-  color: var(--secundary-color);
+}
+
+.md-medium-display {
+  @include font-style(
+    $size: 3.6rem,
+    $fontWeight: 500,
+    $lineHeight: 4.4rem,
+    $letterSpacing: -0.02%
+  );
 }
 
 .md-semibold-text {
@@ -57,7 +73,6 @@ body {
     $lineHeight: 4.4rem,
     $letterSpacing: 0.02%
   );
-  text-align: center;
 }
 
 // Media
