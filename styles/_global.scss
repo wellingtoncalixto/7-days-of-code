@@ -22,9 +22,17 @@ li {
 body {
   font-family: "Inter", sans-serif;
   width: 100%;
-  max-width: 128rem;
   margin: 0 auto;
+}
+
+main,
+header {
+  max-width: 128rem;
+}
+
+main {
   padding: 0 3.2rem;
+  margin: 0 auto;
 }
 
 //Global Class
@@ -95,7 +103,7 @@ body {
 }
 
 @media screen and (min-width: 1281px) {
-  body {
+  main {
     padding: 0;
   }
 }
