@@ -2,27 +2,47 @@ header {
   width: 100%;
   padding: 1.8rem 3.2rem;
   margin: 0 auto;
+  position: relative;
+
+  display: grid;
+  grid-template-areas: "logo hamburguerMenu";
+  justify-content: space-between;
+  align-items: center;
 
   @media screen and (min-width: 1281px) {
     padding: 1.8rem 0;
   }
 }
 
-header nav {
-  display: grid;
-  grid-template-areas: "logo nav-list nav-list buttons";
-  align-items: center;
-}
-
-header nav img {
+#primus-tech-logo {
   grid-area: logo;
 }
 
-.nav-list {
-  grid-area: nav-list;
+#hamburguer-menu-icon {
+  grid-area: hamburguerMenu;
+}
+
+header nav {
+  display: none;
+}
+
+.active-menu-mobile {
+  position: absolute;
+  top: calc(0px + (2 * 1.8rem) + 3.5rem);
+
+  padding: 1.8rem 3.2rem;
+  width: 100%;
+  background-color: #fff;
 
   display: flex;
-  gap: 3.2rem;
+  flex-direction: column;
+  box-shadow: 0 5px 5px rgba($color: #000, $alpha: 0.3);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
   list-style: none;
   text-decoration: none;
@@ -45,10 +65,8 @@ header nav img {
 }
 
 .buttons-container {
-  grid-area: buttons;
-
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   gap: 1.2rem;
 }
 
@@ -57,6 +75,7 @@ header nav img {
   @include font-style($fontWeight: 500, $lineHeight: 2.4rem);
   padding: 1rem 1.8rem;
   text-decoration: none;
+  text-align: center;
 }
 
 .sign-in-button {
@@ -81,5 +100,40 @@ header nav img {
   &:hover {
     background-color: var(--primary-color-hover);
     transition: background-color 0.3s;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    grid-template-areas: "logo nav";
+    justify-content: unset;
+    align-items: center;
+  }
+
+  #hamburguer-menu-icon {
+    display: none;
+  }
+
+  header nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .buttons-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    grid-template-columns: max-content 1fr;
+    gap: 15rem;
   }
 }
