@@ -27,7 +27,7 @@ Project developed during participation in the [#7DaysOfCode](https://7daysofcode
 
 ## Tech Stack
 
-This project focuses exclusively on the front-end, without back-end interaction and without the need for JavaScript. The landing page was designed to be developed using **HTML** and **CSS**. However, during the development, I opted to use **SCSS** instead of CSS to take advantage of features such as mixins and nesting, which helped and sped up the development process.
+This challenge was designed to focus exclusively on the front-end, with no interaction with the back-end and no need for JavaScript. The landing page was intended to be developed using **HTML** and **CSS**. However, during the development, I chose to use **SASS** instead of CSS to take advantage of features like mixins and nesting, which helped streamline and speed up the development process. I also used **JavaScript** to make the site fully responsive for mobile, tablets, and desktops.
 
 ## Pt-BR
 
@@ -51,4 +51,4 @@ Projeto desenvolvido durante a participação no desafio [#7DaysOfCode](https://
 
 ## Tech Stack
 
-Este projeto foca exclusivamente na parte front-end, sem interação com back-end e sem necessidade de JavaScript. A landing page foi pensada para ser desenvolvida utilizando **HTML** e **CSS**. No entanto, durante o desenvolvimento, optei por utilizar **SCSS** em vez de CSS, para aproveitar recursos como mixins e nested, que auxiliaram e agilizaram o processo de desenvolvimento.
+Este desafio foi feito para focar exclusivamente na parte front-end, sem interação com back-end e sem necessidade de JavaScript. A landing page foi pensada para ser desenvolvida utilizando **HTML** e **CSS**. No entanto, durante o desenvolvimento, optei por utilizar **SASS** em vez de CSS, para aproveitar recursos como mixins e nested, que auxiliaram e agilizaram o processo de desenvolvimento e tambem a utlização do **Javascript** para poder deixar o site totalmente responsivo para mobile, tablets e desktops.
